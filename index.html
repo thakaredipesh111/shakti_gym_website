@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gymweb</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap" rel="stylesheet">
+<style>
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background:url(img/wp12425070-fitness-4k-wallpapers.jpg);
+        /* height: 4544px; */
+        background-size: cover;
+        
+    }
+    .left{
+        position: absolute;
+        left: 27px;
+        top: -9px;
+        width: 5%;
+        display: inline-block;
+       
+    
+        
+        /* border: 2px solid red; */
+        
+    }
+    .mid{
+        display: block;
+        width: 46%;
+        margin: 20px auto;
+        /* border: 2px solid blue; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 13px;
+        display: inline-block;
+        /* border: 2px solid violet; */
+    }
+    .lefttext{
+        position: absolute;
+        left: 86px;
+        top: 19px;
+        width: 17%;
+        display: inline-block;
+        color: black;
+        /* border: 2px solid green; */
+    }
+    .navbar li{
+        display: inline-block; /*inline used to arrange in one line*/
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+       
+        
+    }
+    .navbar li a{
+        color: black;
+        text-decoration: none;
+        padding: 28px 21px;
+        
+    }
+    .navbar li a:hover,.navbar li a.active{
+        color: red;
+        text-decoration: brown underline 4px;
+        
+    }
+    
+    .left img{
+        width: 74%;
+        /* filter: invert(100%); */
+    }
+    .lefttext{
+        font-size: 21px;
+        font-family: 'Black Ops One', system-ui;
+    }
+    .btn{
+        font-family: 'Inter', sans-serif;
+        margin: 0px 0px;
+        background-color: black;
+        color: white;
+        padding: 6px 12px;
+        border: 1px solid grey;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(111, 18, 2);
+    }
+    .container{
+
+        border: 2px solid white;
+        margin: 100px 76px;
+        padding: 38px;
+        width: 32%;
+        border-radius: 28px;
+        
+
+    }
+    .formgroup input{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: block;
+    width: 353px;
+    padding: 8px;
+    border: 2px solid grey;
+    margin: 3px auto;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0.5);
+    }
+    .container h1{
+        font-family: 'Handjet', sans-serif;
+        text-align: center;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+    .container h1 :hover{
+        color: red;
+    }
+    .container button{
+        text-align: center;
+        display: block;
+        width: 373px;
+        margin: 10px auto;
+    } 
+    
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        
+        <div class="left">
+            <p style="display:inline-block;">
+                <img src="img/weight.png">
+            </p>
+        </div>
+        <div class="lefttext">
+            Shakti Fitness
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness Center</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="color: white;">JOIN THE BEST GYM IN MUMBAI NOW</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" id="" placeholder="Enter your mobile no.">
+            </div>
+            <div class="formgroup">
+                <input type="email" name="" id="" placeholder="Enter your email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
